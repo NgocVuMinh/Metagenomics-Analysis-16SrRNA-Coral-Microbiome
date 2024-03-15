@@ -14,7 +14,7 @@ After downloading, all files were converted to FASTQ format as input for the DAD
 
 ```
 dir > list.txt # append all file names into a text file
-or i in $(cat list.txt); do echo $i; date; fasterq-dump -S $i; done
+for i in $(cat list.txt); do echo $i; date; fasterq-dump -S $i; done
 ```
 
 Details of R and the used 16S rRNA sequences as well as the locations and samples will be updated later
